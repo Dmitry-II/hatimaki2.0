@@ -322,7 +322,7 @@
                 android:layout_height="198dp"
                 android:layout_marginTop="37dp"
                 android:layout_marginStart="31dp"
-                android:background="@drawable/shape_card_menu">
+                android:background="@color/black">
 
 
 
