@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainFragment">
+
+
+    <!--    гайдлайны-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+    <!--    гайдлайны-->
+
+    <ImageButton
+        android:id="@+id/options_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/ic_1options"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/shape_1search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="улица Маршала Тухачевского, 42к2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/search"
+        app:layout_constraintStart_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/search" />
+
+    <ImageButton
+        android:id="@+id/researcher_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/ic_researcher2"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    горизонатльный скролл-->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search">
+
+        <LinearLayout
+            android:id="@+id/cardsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--            карточки-->
+            <androidx.cardview.widget.CardView
+                style="@style/cardViewStyle"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_1card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_2card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_3card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_4card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_5card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_6card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_7card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/cardViewStyle">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    style="@style/ImageStyle"
+                    android:src="@drawable/png_8card" />
+            </androidx.cardview.widget.CardView>
+            <!--            карточки-->
+        </LinearLayout>
+    </HorizontalScrollView>
+    <!--    горизонатльный скролл-->
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbarSize="0dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScroll1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/shape_red_table_category" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="🛒 заказ от 1200₽"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="118dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Новинки и акции" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="89dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Суши-меню" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="112dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Основное меню" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="61dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Легкое" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="103dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Детское меню" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="130dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/shape_table_category" />
+
+                <TextView
+                    style="@style/textSScroller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="Десерты и напитки" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScroll2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="41dp"
+                android:text="Новинки"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="175dp"
+                android:layout_height="198dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginStart="31dp"
+                android:background="@drawable/shape_card_menu">
+
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
