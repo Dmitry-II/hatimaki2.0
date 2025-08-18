@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red_primary">#C1001F</color>
     <color name="search">#D9D9D9</color>
+    <color name="default_color">#F6F6F6</color>
 </resources>
 
 
