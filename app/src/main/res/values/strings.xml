@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">hatimaki</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address_example">улица Маршала Тухачевского, 42к2</string>
+    <string name="new_products">Новинки</string>
+    <string name="cart_order">🛒 заказ от 1200₽</string>
+    <string name="new_and_sales">Новинки и акции</string>
+    <string name="sushi_menu">Суши-меню</string>
+    <string name="main_menu">Основное меню</string>
+    <string name="light_food">Легкое</string>
+    <string name="kids_menu">Детское меню</string>
+    <string name="desserts_drinks">Десерты и напитки</string>
+
 </resources>

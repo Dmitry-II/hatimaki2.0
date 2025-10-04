@@ -1,44 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
     <style name="cardViewStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">9dp</item>
-        <item name="cardCornerRadius">20dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
     </style>
 
-
     <style name="ImageStyle">
-        <item name="android:layout_width">87dp</item>
-        <item name="android:layout_height">102dp</item>
+        <item name="android:layout_width">@dimen/card_image_width</item>
+        <item name="android:layout_height">@dimen/card_image_height</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
-    <style name="cardView1Style">
+    <style name="CategoryButtonStyle" parent="Widget.Material3.Button.TextButton">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">7dp</item>
+        <item name="android:layout_height">@dimen/button_size_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
     </style>
 
-
-    <style name="textSScroller">
-        <item name="android:textSize">12dp</item>
-        <item name="android:start">15dp</item>
-        <item name="android:textColor">@color/white</item>
+    <style name="ProductCardStyle">
+        <item name="android:layout_width">@dimen/product_card_width</item>
+        <item name="android:layout_height">@dimen/product_card_height</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">4dp</item>
     </style>
-
-    <style name="ScrollButtons">
-        <item name="android:start">3dp</item>
-    </style>
-
-    <style name="frameCardMenu">
-        <item name="android:layout_width">175dp</item>
-        <item name="android:layout_height">198dp</item>
-        <item name="android:layout_marginStart">15dp</item>
-        <item name="android:layout_marginTop">13dp</item>
-        <item name="android:background">@drawable/shape_card_menu</item>
-    </style>
-
 </resources>

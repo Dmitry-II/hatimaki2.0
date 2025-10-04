@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
+
+    <!-- Button sizes -->
+    <dimen name="button_size_small">32dp</dimen>
+    <dimen name="button_size_medium">36dp</dimen>
+    <dimen name="button_size_large">40dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+
+    <!-- Card sizes -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_image_width">87dp</dimen>
+    <dimen name="card_image_height">102dp</dimen>
+    <dimen name="product_card_width">175dp</dimen>
+    <dimen name="product_card_height">198dp</dimen>
+
+    <!-- Layout sizes -->
+    <dimen name="header_height">45dp</dimen>
+    <dimen name="scroll_view_height">20dp</dimen>
+</resources>
